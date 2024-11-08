@@ -11,6 +11,6 @@ export function getPortfolioAllocation() {
     return assets.map(assets => ([
         name: asset.name,
         allocation: ((asset.price * asset.quantity) / totalValue * 100).toFixed(2) +"%"
-    ]));
+    ]));        //Function to calculate the percentage allocation of each asset
 }
 
